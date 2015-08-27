@@ -1,0 +1,11 @@
+[galera]
+# Mandatory settings
+wsrep_provider=/usr/lib64/galera/libgalera_smm.so
+wsrep_sst_method=rsync
+#wsrep_cluster_address=gcomm://
+#wsrep_node_address=
+wsrep_slave_threads=1
+binlog_format=row
+default_storage_engine=InnoDB
+innodb_autoinc_lock_mode=2
+query_cache_size=0
